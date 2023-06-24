@@ -1,0 +1,41 @@
+{
+  "name": "my-app",
+  "version": "1.0.0",
+  "main": "node_modules/expo/AppEntry.js",
+  "scripts": {
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "web": "expo start --web"
+  },
+  "dependencies": {
+    "@expo/vector-icons": "^13.0.0",
+    "@react-navigation/bottom-tabs": "^6.5.8",
+    "@react-navigation/native-stack": "^6.9.13",
+    "@reduxjs/toolkit": "^1.9.5",
+    "expo": "~48.0.18",
+    "expo-camera": "^13.2.1",
+    "expo-dev-client": "~2.2.1",
+    "expo-font": "^11.1.1",
+    "expo-image-picker": "^14.1.1",
+    "expo-location": "^15.1.1",
+    "expo-status-bar": "~1.4.4",
+    "firebase": "^9.23.0",
+    "lottie-react-native": "5.1.4",
+    "nanoid": "^4.0.2",
+    "react": "18.2.0",
+    "react-native": "0.71.8",
+    "react-native-get-random-values": "~1.8.0",
+    "react-native-image-pan-zoom": "^2.1.12",
+    "react-native-keyboard-aware-scroll-view": "^0.9.5",
+    "react-native-keyboard-aware-scrollview": "^2.1.0",
+    "react-native-keyboard-aware-view": "^0.0.14",
+    "react-native-maps": "1.3.2",
+    "react-redux": "^8.1.1",
+    "expo-updates": "~0.16.4"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.20.0"
+  },
+  "private": true
+}
