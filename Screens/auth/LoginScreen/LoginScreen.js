@@ -34,7 +34,7 @@ export function LoginScreen({ navigation }) {
         Keyboard.dismiss();
         
     };
-  
+
     return (
           isLoading ? <Loader /> :
         <TouchableWithoutFeedback style={{ flex: 1 }} onPress={() => { Keyboard.dismiss(); setShowKeyboard(false); }}>

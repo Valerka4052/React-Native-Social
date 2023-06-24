@@ -29,6 +29,7 @@ export function CreateScreen({ navigation }) {
     const { nickName, userId,profileImage } = useSelector(state => state.authorisation);
     const [flipCamera, setFlipCamera] = useState(false);
 
+
     useEffect(() => {
         (async () => {
             let { status } = await Location.requestForegroundPermissionsAsync();

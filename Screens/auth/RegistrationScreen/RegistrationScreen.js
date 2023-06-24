@@ -36,12 +36,14 @@ export function RegistrationScreen({ navigation }) {
     const togglePassword = () => setShowPassword(prevState => !prevState);
     const dispatch = useDispatch();
     const { devicePhoto, isLoading } = useSelector(state => state.authorisation);
+    const [permission, requestPermission] = Camera.useCameraPermissions();
 
     useEffect(() => {
         (async () => {
             const { status } = await Camera.requestCameraPermissionsAsync();
         })();
-    }, []);
+        
+    }, [])
 
     const takePicture = async () => {
                const options = { quality: 0.1, base64: true};
@@ -101,6 +103,13 @@ export function RegistrationScreen({ navigation }) {
         })
         Keyboard.dismiss();
     };
+
+    if (!permission) return <View />;
+
+
+  if (!permission.granted) {
+    return <Text>Нет доступа к камере</Text>;
+  }
 
     return (
         isLoading ? <Loader /> :
